@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <script>
+      console.log(window.location);
+      const cal = window.location.href.replace(new RegExp('.*' + 'cal='), '');
+      const path = `https://calendar.google.com/calendar/embed?showTitle=0&showNav=0&mode=AGENDA&height=600&wkst=1&bgcolor=%23FFFFFF&color=%231B887A&ctz=America%2FLos_Angeles&src=`;
+      window.location = path + cal;
+    </script>
+  </head>
+  <body>
+    nothing to see here
+  </body>
+</html>
